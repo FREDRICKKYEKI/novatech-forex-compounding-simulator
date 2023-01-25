@@ -33,7 +33,7 @@ function calculate(e){
             }  
             for (let i = 0; i < 4; i++) {
                 
-                const randomROI = ((Math.random()*(3.5-3)+3)/100)
+                const randomROI = ((Math.random()*(3.5-2.7)+2.7)/100)
                 totalROI +=randomROI 
                 total = initialAmount*(1+randomROI)
                 initialAmount=total
