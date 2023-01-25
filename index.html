@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novatech Simulator</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="header">Novatech Simulator</h2>
+
+        <form class="form">
+            <label for="initAmount" class="input-div">
+                <input required placeholder="Initial Amount ($)" id="initAmount" type="number"/>
+                <span class="label">Initial Amount ($)</span>
+            </label>
+            <label for="months" class="input-div">
+                <input required placeholder="Months" id="months" type="number"/>
+                <span class="label">Months</span>
+            </label>
+            <button type="submit" class="calcBtn">Calculate</button>
+        </form>
+        <table id="t-header" class="th" style="display: none;">
+                <tr>
+                    <th>Months</th>
+                    <th>Amount</th>
+                    <th>Avg. ROI per week</th>
+                </tr>
+        </table>
+        <div class="table-wrapper">
+            <table id="table">
+
+            </table>
+        </div>
+        
+        <canvas id="myChart" ></canvas>        
+    </div>
+
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</body>
+</html>
